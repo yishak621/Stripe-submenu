@@ -134,6 +134,7 @@ Stripe Styles
   background: transparent;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 .nav-center {
   width: 90vw;
@@ -357,6 +358,11 @@ Stripe Styles
 }
 
 /* links */
+.nav-links,
+nav,
+.sidebar {
+  cursor: pointer;
+}
 .submenu {
   background: var(--clr-white);
   box-shadow: var(--dark-shadow);

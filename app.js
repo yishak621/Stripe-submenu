@@ -88,14 +88,15 @@ ${links
 });
 
 //hiding the link btns
-hero.addEventListener('mouseover', function (e) {
-  setTimeout(function () {
-    return submenu.classList.remove('show');
-  }, 3000);
-});
+// hero.addEventListener('mouseover', function () {
+
+// });
 
 nav.addEventListener('mouseover', function (e) {
-  if (!e.target.classList.contains('link-btn')) {
+  if (
+    !e.target.classList.contains('link-btn') &&
+    !e.target.classList.contains('submenu')
+  ) {
     submenu.classList.remove('show');
   }
 });
